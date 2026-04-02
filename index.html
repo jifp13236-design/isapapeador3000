@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>isapapeador3000 🌸</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+.sc{display:none;width:100%;min-height:700px;flex-direction:column;align-items:center}
+.sc.on{display:flex}
+@keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes f2{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-10px) rotate(5deg)}}
+@keyframes sw{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+@keyframes pu{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@keyframes tw{0%,100%{opacity:0.25}50%{opacity:1}}
+@keyframes wd{0%,100%{transform:translateY(0)}50%{transform:translateY(13px)}}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sh{0%,100%{transform:translateX(0)}30%{transform:translateX(-5px)}70%{transform:translateX(5px)}}
+@keyframes dr{0%{transform:translate(0,0)}25%{transform:translate(8px,-6px)}50%{transform:translate(0,-11px)}75%{transform:translate(-8px,-6px)}100%{transform:translate(0,0)}}
+#sl{background:#fde8f0;position:relative;overflow:hidden;justify-content:center;padding:3rem 1.5rem}
+.dk{position:absolute;pointer-events:none}
+.dk.blob1{position:absolute;top:-50px;left:-50px;width:200px;height:200px;border-radius:50%;background:#fda4af;opacity:0.32;animation:dr 8s ease-in-out infinite}
+.dk.blob2{position:absolute;top:-30px;right:-40px;width:180px;height:180px;border-radius:50%;background:#f9a8d4;opacity:0.28;animation:dr 10s ease-in-out infinite reverse}
+.dk.blob3{position:absolute;bottom:-60px;left:-30px;width:220px;height:220px;border-radius:50%;background:#ec4899;opacity:0.25;animation:dr 12s ease-in-out infinite}
+.dk.blob4{position:absolute;bottom:-40px;right:-50px;width:190px;height:190px;border-radius:50%;background:#db2777;opacity:0.29;animation:dr 9s ease-in-out infinite reverse}
+.lb{position:relative;z-index:10;background:rgba(255,255,255,0.88);border-radius:26px;border:2.5px solid #f9a8d4;padding:2.5rem 2rem 2rem;max-width:330px;width:100%;text-align:center;animation:fu 0.7s ease both}
+.li{font-size:42px;animation:pu 2.5s ease-in-out infinite;margin-bottom:0.3rem}
+.lb h1{font-size:1.5rem;color:#be185d;font-family:Georgia,serif;margin-bottom:0.2rem}
+.lb>p{font-size:0.84rem;color:#9d174d;margin-bottom:1.4rem;font-family:sans-serif}
+.pi{width:100%;padding:11px 14px;border-radius:50px;border:2px solid #f9a8d4;background:#fff0f6;font-size:1rem;text-align:center;color:#831843;outline:none;margin-bottom:0.8rem;font-family:sans-serif;letter-spacing:0.18em;transition:border-color 0.2s}
+.pi:focus{border-color:#ec4899}
+.eb{width:100%;padding:11px;border-radius:50px;background:#ec4899;color:#fff;border:none;cursor:pointer;font-size:0.95rem;font-family:sans-serif;font-weight:500;transition:background 0.2s,transform 0.1s}
+.eb:hover{background:#be185d}.eb:active{transform:scale(0.97)}
+.em{font-size:0.82rem;color:#be185d;margin-top:0.5rem;font-family:sans-serif;min-height:1em}
+.hi{font-size:0.75rem;color:#db2777;margin-top:0.7rem;font-family:sans-serif;opacity:0.6}
+#sh{background:#fff5fb;flex-direction:column;align-items:stretch}
+.hh{background:#ec4899;padding:0.8rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.hh h2{color:#fff;font-family:Georgia,serif;font-size:1.2rem}
+.xb{background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);color:#fff;padding:5px 14px;border-radius:50px;cursor:pointer;font-size:0.8rem;font-family:sans-serif}
+.xb:hover{background:rgba(255,255,255,0.3)}
+.hrow{display:flex;gap:0.9rem;padding:0.5rem 1.5rem;overflow-x:auto;width:100%;scrollbar-width:none}
+.hrow::-webkit-scrollbar{display:none}
+.sb{background:#fff;border-radius:18px;border:2px solid #fce7f3;padding:1.2rem 0.9rem;text-align:center;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0.45rem;min-width:105px;transition:transform 0.15s,box-shadow 0.15s,border-color 0.15s;flex-shrink:0}
+.sb:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(236,72,153,0.15);border-color:#f9a8d4}
+.sb:active{transform:scale(0.96)}
+.si{font-size:28px}
+.sn{font-size:0.82rem;color:#831843;font-family:Georgia,serif;font-weight:500}
+.ss{font-size:0.68rem;padding:2px 8px;border-radius:50px;font-family:sans-serif}
+.ss.dn{background:#fce7f3;color:#be185d}.ss.so{background:#f1f5f9;color:#94a3b8}
+#sp{background:#07091a;align-items:center;padding:4rem 2rem;position:relative;overflow:hidden;min-height:700px}
+.pstar{position:absolute;border-radius:50%;background:#fff}
+.bbk{position:absolute;top:1rem;left:1rem;z-index:20;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.22);color:#f5e6a3;padding:6px 14px;border-radius:50px;cursor:pointer;font-size:0.8rem;font-family:sans-serif}
+.bbk:hover{background:rgba(255,255,255,0.14)}
+.pmoon{margin-bottom:1.2rem;margin-top:0.5rem;animation:pu 4s ease-in-out infinite}
+.ptit{font-family:Georgia,serif;font-style:italic;color:#f5e6a3;font-size:1.55rem;text-align:center;margin-bottom:0.25rem}
+.psub{font-family:sans-serif;color:#a89060;font-size:0.78rem;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:1.2rem}
+.pdiv{width:90px;height:1px;background:#a89060;opacity:0.45;margin:0 auto 1.8rem}
+.ppar{font-family:Georgia,serif;color:#ddd5b8;font-size:0.9rem;line-height:1.95;text-align:center;margin-bottom:1.4rem;max-width:480px;width:100%}
+.ppar:first-of-type{color:#f0e8c8}
+.pclos{font-family:Georgia,serif;color:#f5e6a3;font-style:italic;font-size:1.08rem;text-align:center;margin-top:0.3rem}
+.pfot{display:flex;align-items:center;gap:1rem;margin-top:2.5rem}
+.pfotl{width:50px;height:1px;background:#a89060;opacity:0.4}
+.bsc{background:#fff5fb;align-items:center;justify-content:center;flex-direction:column;padding:3rem 2rem}
+.bsc-in{text-align:center}
+.bsc-in h2{font-family:Georgia,serif;color:#be185d;font-size:1.35rem;margin-bottom:0.4rem}
+.bsc-in>p{font-family:sans-serif;color:#9d174d;font-size:0.85rem;margin-bottom:1.8rem}
+.bsc-box{border:2px dashed #fce7f3;border-radius:20px;padding:2rem 1.5rem;background:#fff;max-width:280px}
+.bsc-box p{font-family:sans-serif;color:#cbd5e1;font-size:0.88rem}
+.bk{background:#ec4899;color:#fff;border:none;padding:10px 24px;border-radius:50px;cursor:pointer;font-family:sans-serif;font-size:0.88rem;margin-top:1.5rem;display:inline-block}
+.bk:hover{background:#be185d}
+</style>
+</head>
+<body>
+
+<div id="sl" class="sc on">
+  <div class="dk blob1"></div>
+  <div class="dk blob2"></div>
+  <div class="dk blob3"></div>
+  <div class="dk blob4"></div>
+  <svg class="dk" style="top:4%;left:2%;width:80px;animation:f1 4s ease-in-out infinite" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="40" cy="38" rx="38" ry="32" fill="white"/>
+    <ellipse cx="40" cy="38" rx="33" ry="27" fill="#dc2626"/>
+    <line x1="40" y1="38" x2="8" y2="13" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="40" y2="8" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="72" y2="13" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="76" y2="38" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="72" y2="63" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="40" y2="68" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="8" y2="63" stroke="#991b1b" stroke-width="0.9"/><line x1="40" y1="38" x2="4" y2="38" stroke="#991b1b" stroke-width="0.9"/>
+    <ellipse cx="40" cy="38" rx="12" ry="10" fill="none" stroke="#991b1b" stroke-width="0.8"/><ellipse cx="40" cy="38" rx="22" ry="18" fill="none" stroke="#991b1b" stroke-width="0.8"/><ellipse cx="40" cy="38" rx="32" ry="26" fill="none" stroke="#991b1b" stroke-width="0.8"/>
+    <ellipse cx="24" cy="29" rx="13" ry="10" fill="white" transform="rotate(-13,24,29)"/><ellipse cx="56" cy="29" rx="13" ry="10" fill="white" transform="rotate(13,56,29)"/>
+    <ellipse cx="24" cy="29" rx="13" ry="10" fill="none" stroke="#7f1d1d" stroke-width="0.8" transform="rotate(-13,24,29)"/><ellipse cx="56" cy="29" rx="13" ry="10" fill="none" stroke="#7f1d1d" stroke-width="0.8" transform="rotate(13,56,29)"/>
+  </svg>
+  <svg class="dk" style="top:5%;right:3%;width:72px;animation:f2 5s ease-in-out infinite" viewBox="0 0 72 68" xmlns="http://www.w3.org/2000/svg">
+    <path d="M36 66 C36 66 1 42 1 20 A18 18 0 0 1 36 16 A18 18 0 0 1 71 20 C71 42 36 66 36 66Z" fill="white"/>
+    <path d="M36 61 C36 61 5 39 5 20 A15 15 0 0 1 36 17 A15 15 0 0 1 67 20 C67 39 36 61 36 61Z" fill="#dc2626"/>
+    <line x1="36" y1="37" x2="5" y2="20" stroke="#991b1b" stroke-width="0.85"/><line x1="36" y1="37" x2="36" y2="10" stroke="#991b1b" stroke-width="0.85"/><line x1="36" y1="37" x2="67" y2="20" stroke="#991b1b" stroke-width="0.85"/><line x1="36" y1="37" x2="36" y2="60" stroke="#991b1b" stroke-width="0.85"/>
+    <ellipse cx="36" cy="32" rx="10" ry="8" fill="none" stroke="#991b1b" stroke-width="0.7"/><ellipse cx="36" cy="26" rx="18" ry="12" fill="none" stroke="#991b1b" stroke-width="0.7"/>
+    <ellipse cx="22" cy="26" rx="10" ry="8" fill="white" transform="rotate(-10,22,26)"/><ellipse cx="50" cy="26" rx="10" ry="8" fill="white" transform="rotate(10,50,26)"/>
+    <ellipse cx="22" cy="26" rx="10" ry="8" fill="none" stroke="#7f1d1d" stroke-width="0.7" transform="rotate(-10,22,26)"/><ellipse cx="50" cy="26" rx="10" ry="8" fill="none" stroke="#7f1d1d" stroke-width="0.7" transform="rotate(10,50,26)"/>
+  </svg>
+  <svg class="dk" style="top:8%;left:30%;width:42px;animation:wd 3.5s ease-in-out infinite" viewBox="0 0 42 90" xmlns="http://www.w3.org/2000/svg">
+    <line x1="21" y1="0" x2="21" y2="18" stroke="#bbb" stroke-width="1.5"/>
+    <circle cx="21" cy="28" r="10" fill="#dc2626"/>
+    <ellipse cx="17" cy="26" rx="4.5" ry="3.5" fill="white" transform="rotate(-12,17,26)"/><ellipse cx="25" cy="26" rx="4.5" ry="3.5" fill="white" transform="rotate(12,25,26)"/>
+    <line x1="21" y1="25" x2="5" y2="21" stroke="#991b1b" stroke-width="0.7"/><line x1="21" y1="25" x2="37" y2="21" stroke="#991b1b" stroke-width="0.7"/><line x1="21" y1="25" x2="21" y2="18" stroke="#991b1b" stroke-width="0.7"/>
+    <ellipse cx="21" cy="48" rx="11" ry="14" fill="#3b82f6"/>
+    <path d="M10 34 Q4 45 4 58" fill="none" stroke="#1d4ed8" stroke-width="2"/><path d="M32 34 Q38 45 38 58" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+    <path d="M10 34 Q5 28 2 24" fill="none" stroke="#1d4ed8" stroke-width="1.5"/><path d="M32 34 Q37 28 40 24" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+    <path d="M10 42 Q4 46 2 52" fill="none" stroke="#1d4ed8" stroke-width="1.5"/><path d="M32 42 Q38 46 40 52" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+    <path d="M12 60 L15 72" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/><path d="M30 60 L27 72" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  <svg class="dk" style="bottom:12%;left:4%;width:65px;animation:f1 6s ease-in-out infinite" viewBox="0 0 70 76" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="12" fill="white"/><circle cx="50" cy="20" r="12" fill="white"/>
+    <circle cx="20" cy="20" r="9" fill="white" stroke="#fda4af" stroke-width="1.5"/><circle cx="50" cy="20" r="9" fill="white" stroke="#fda4af" stroke-width="1.5"/>
+    <ellipse cx="35" cy="47" rx="30" ry="28" fill="white" stroke="#fda4af" stroke-width="1.5"/>
+    <circle cx="25" cy="45" r="3.5" fill="#1a1a1a"/><circle cx="45" cy="45" r="3.5" fill="#1a1a1a"/>
+    <ellipse cx="35" cy="52" rx="2.5" ry="2" fill="#fda4af"/>
+    <line x1="35" y1="52" x2="14" y2="48" stroke="#bbb" stroke-width="1"/><line x1="35" y1="54" x2="14" y2="57" stroke="#bbb" stroke-width="1"/><line x1="35" y1="52" x2="56" y2="48" stroke="#bbb" stroke-width="1"/><line x1="35" y1="54" x2="56" y2="57" stroke="#bbb" stroke-width="1"/>
+    <path d="M55 25 L63 18 L63 32 Z" fill="#ec4899"/><path d="M55 25 L47 18 L47 32 Z" fill="#ec4899"/>
+    <circle cx="55" cy="25" r="3.5" fill="#db2777"/>
+  </svg>
+  <svg class="dk" style="top:22%;right:2%;width:56px;animation:f2 7s ease-in-out infinite 1s" viewBox="0 0 70 76" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="12" fill="white"/><circle cx="50" cy="20" r="12" fill="white"/>
+    <circle cx="20" cy="20" r="9" fill="white" stroke="#93c5fd" stroke-width="1.5"/><circle cx="50" cy="20" r="9" fill="white" stroke="#93c5fd" stroke-width="1.5"/>
+    <ellipse cx="35" cy="47" rx="30" ry="28" fill="white" stroke="#93c5fd" stroke-width="1.5"/>
+    <circle cx="25" cy="45" r="3.5" fill="#1a1a1a"/><circle cx="45" cy="45" r="3.5" fill="#1a1a1a"/>
+    <ellipse cx="35" cy="52" rx="2.5" ry="2" fill="#93c5fd"/>
+    <line x1="35" y1="52" x2="14" y2="48" stroke="#bbb" stroke-width="1"/><line x1="35" y1="54" x2="14" y2="57" stroke="#bbb" stroke-width="1"/><line x1="35" y1="52" x2="56" y2="48" stroke="#bbb" stroke-width="1"/><line x1="35" y1="54" x2="56" y2="57" stroke="#bbb" stroke-width="1"/>
+    <path d="M55 25 L63 18 L63 32 Z" fill="#60a5fa"/><path d="M55 25 L47 18 L47 32 Z" fill="#60a5fa"/>
+    <circle cx="55" cy="25" r="3.5" fill="#2563eb"/>
+  </svg>
+  <svg class="dk" style="bottom:15%;right:4%;width:52px;animation:f1 5s ease-in-out infinite 2s" viewBox="0 0 70 76" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="12" fill="white"/><circle cx="50" cy="20" r="12" fill="white"/>
+    <circle cx="20" cy="20" r="9" fill="white" stroke="#d8b4fe" stroke-width="1.5"/><circle cx="50" cy="20" r="9" fill="white" stroke="#d8b4fe" stroke-width="1.5"/>
+    <ellipse cx="35" cy="47" rx="30" ry="28" fill="white" stroke="#d8b4fe" stroke-width="1.5"/>
+    <circle cx="25" cy="45" r="3.5" fill="#1a1a1a"/><circle cx="45" cy="45" r="3.5" fill="#1a1a1a"/>
+    <ellipse cx="35" cy="52" rx="2.5" ry="2" fill="#d8b4fe"/>
+    <line x1="35" y1="52" x2="14" y2="48" stroke="#bbb" stroke-width="1"/><line x1="35" y1="54" x2="14" y2="57" stroke="#bbb" stroke-width="1"/><line x1="35" y1="52" x2="56" y2="48" stroke="#bbb" stroke-width="1"/><line x1="35" y1="54" x2="56" y2="57" stroke="#bbb" stroke-width="1"/>
+    <path d="M55 25 L63 18 L63 32 Z" fill="#a855f7"/><path d="M55 25 L47 18 L47 32 Z" fill="#a855f7"/>
+    <circle cx="55" cy="25" r="3.5" fill="#7c3aed"/>
+  </svg>
+  <svg class="dk" style="top:18%;left:18%;width:48px;animation:f2 5.5s ease-in-out infinite" viewBox="0 0 70 76" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="12" fill="white"/><circle cx="50" cy="20" r="12" fill="white"/>
+    <circle cx="20" cy="20" r="9" fill="white" stroke="#fda4af" stroke-width="1.5"/><circle cx="50" cy="20" r="9" fill="white" stroke="#fda4af" stroke-width="1.5"/>
+    <ellipse cx="35" cy="47" rx="30" ry="28" fill="white" stroke="#fda4af" stroke-width="1.5"/>
+    <circle cx="25" cy="45" r="3.5" fill="#1a1a1a"/><circle cx="45" cy="45" r="3.5" fill="#1a1a1a"/>
+    <ellipse cx="35" cy="52" rx="2.5" ry="2" fill="#fda4af"/>
+    <path d="M55 25 L63 18 L63 32 Z" fill="#ec4899"/><path d="M55 25 L47 18 L47 32 Z" fill="#ec4899"/>
+    <circle cx="55" cy="25" r="3.5" fill="#db2777"/>
+  </svg>
+  <svg class="dk" style="top:65%;left:28%;width:38px;animation:f1 4.5s ease-in-out infinite 1.2s" viewBox="0 0 70 76" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="12" fill="white"/><circle cx="50" cy="20" r="12" fill="white"/>
+    <circle cx="20" cy="20" r="9" fill="white" stroke="#93c5fd" stroke-width="1.5"/><circle cx="50" cy="20" r="9" fill="white" stroke="#93c5fd" stroke-width="1.5"/>
+    <ellipse cx="35" cy="47" rx="30" ry="28" fill="white" stroke="#93c5fd" stroke-width="1.5"/>
+    <circle cx="25" cy="45" r="3.5" fill="#1a1a1a"/><circle cx="45" cy="45" r="3.5" fill="#1a1a1a"/>
+    <ellipse cx="35" cy="52" rx="2.5" ry="2" fill="#93c5fd"/>
+    <path d="M55 25 L63 18 L63 32 Z" fill="#60a5fa"/><path d="M55 25 L47 18 L47 32 Z" fill="#60a5fa"/>
+    <circle cx="55" cy="25" r="3.5" fill="#2563eb"/>
+  </svg>
+  <svg class="dk" style="bottom:25%;right:22%;width:55px;animation:f2 6.5s ease-in-out infinite" viewBox="0 0 70 76" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="12" fill="white"/><circle cx="50" cy="20" r="12" fill="white"/>
+    <circle cx="20" cy="20" r="9" fill="white" stroke="#d8b4fe" stroke-width="1.5"/><circle cx="50" cy="20" r="9" fill="white" stroke="#d8b4fe" stroke-width="1.5"/>
+    <ellipse cx="35" cy="47" rx="30" ry="28" fill="white" stroke="#d8b4fe" stroke-width="1.5"/>
+    <circle cx="25" cy="45" r="3.5" fill="#1a1a1a"/><circle cx="45" cy="45" r="3.5" fill="#1a1a1a"/>
+    <ellipse cx="35" cy="52" rx="2.5" ry="2" fill="#d8b4fe"/>
+    <path d="M55 25 L63 18 L63 32 Z" fill="#a855f7"/><path d="M55 25 L47 18 L47 32 Z" fill="#a855f7"/>
+    <circle cx="55" cy="25" r="3.5" fill="#7c3aed"/>
+  </svg>
+  <svg class="dk" style="top:38%;left:1%;width:62px;animation:f2 5.5s ease-in-out infinite 0.5s" viewBox="0 0 78 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 56 L14 8 Q15 2 23 2 L56 2 Q63 2 63 10 L63 56 L70 56 L72 62 Q72 66 68 66 L8 66 Q4 66 5 62 Z" fill="#f472b6"/>
+    <path d="M14 54 L18 9 Q19 5 25 5 L54 5 Q60 5 60 12 L60 54 Z" fill="#ec4899"/>
+    <path d="M18 38 L60 38 L60 54 L14 54 Z" fill="#9d174d" opacity="0.3"/>
+    <path d="M14 22 L27 16 L40 22 L53 16 L60 20" fill="none" stroke="white" stroke-width="2.5"/>
+    <line x1="25" y1="8" x2="54" y2="13" stroke="#22d3ee" stroke-width="1.5"/><line x1="54" y1="8" x2="25" y2="13" stroke="#22d3ee" stroke-width="1.5"/><line x1="25" y1="13" x2="54" y2="18" stroke="#22d3ee" stroke-width="1.5"/>
+    <rect x="8" y="54" width="64" height="9" rx="3" fill="#be185d"/>
+    <rect x="12" y="63" width="56" height="5" rx="2" fill="#6b7280"/>
+    <circle cx="22" cy="72" r="7" fill="#facc15" stroke="white" stroke-width="1.5"/><circle cx="22" cy="72" r="3" fill="#ca8a04"/>
+    <circle cx="58" cy="72" r="7" fill="#ec4899" stroke="white" stroke-width="1.5"/><circle cx="58" cy="72" r="3" fill="#be185d"/>
+  </svg>
+  <svg class="dk" style="bottom:28%;right:2%;width:55px;animation:f1 6.5s ease-in-out infinite 1.5s" viewBox="0 0 78 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 56 L14 8 Q15 2 23 2 L56 2 Q63 2 63 10 L63 56 L70 56 L72 62 Q72 66 68 66 L8 66 Q4 66 5 62 Z" fill="#f472b6"/>
+    <path d="M14 54 L18 9 Q19 5 25 5 L54 5 Q60 5 60 12 L60 54 Z" fill="#ec4899"/>
+    <path d="M18 38 L60 38 L60 54 L14 54 Z" fill="#9d174d" opacity="0.3"/>
+    <path d="M14 22 L27 16 L40 22 L53 16 L60 20" fill="none" stroke="white" stroke-width="2.5"/>
+    <line x1="25" y1="8" x2="54" y2="13" stroke="#22d3ee" stroke-width="1.5"/><line x1="54" y1="8" x2="25" y2="13" stroke="#22d3ee" stroke-width="1.5"/><line x1="25" y1="13" x2="54" y2="18" stroke="#22d3ee" stroke-width="1.5"/>
+    <rect x="8" y="54" width="64" height="9" rx="3" fill="#be185d"/>
+    <rect x="12" y="63" width="56" height="5" rx="2" fill="#6b7280"/>
+    <circle cx="22" cy="72" r="7" fill="#facc15" stroke="white" stroke-width="1.5"/><circle cx="22" cy="72" r="3" fill="#ca8a04"/>
+    <circle cx="58" cy="72" r="7" fill="#ec4899" stroke="white" stroke-width="1.5"/><circle cx="58" cy="72" r="3" fill="#be185d"/>
+  </svg>
+  <svg class="dk" style="top:55%;right:12%;width:58px;animation:f2 4.8s ease-in-out infinite" viewBox="0 0 78 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 56 L14 8 Q15 2 23 2 L56 2 Q63 2 63 10 L63 56 L70 56 L72 62 Q72 66 68 66 L8 66 Q4 66 5 62 Z" fill="#f472b6"/>
+    <path d="M14 54 L18 9 Q19 5 25 5 L54 5 Q60 5 60 12 L60 54 Z" fill="#ec4899"/>
+    <path d="M18 38 L60 38 L60 54 L14 54 Z" fill="#9d174d" opacity="0.3"/>
+    <path d="M14 22 L27 16 L40 22 L53 16 L60 20" fill="none" stroke="white" stroke-width="2.5"/>
+    <line x1="25" y1="8" x2="54" y2="13" stroke="#22d3ee" stroke-width="1.5"/><line x1="54" y1="8" x2="25" y2="13" stroke="#22d3ee" stroke-width="1.5"/><line x1="25" y1="13" x2="54" y2="18" stroke="#22d3ee" stroke-width="1.5"/>
+    <rect x="8" y="54" width="64" height="9" rx="3" fill="#be185d"/>
+    <rect x="12" y="63" width="56" height="5" rx="2" fill="#6b7280"/>
+    <circle cx="22" cy="72" r="7" fill="#facc15" stroke="white" stroke-width="1.5"/><circle cx="22" cy="72" r="3" fill="#ca8a04"/>
+    <circle cx="58" cy="72" r="7" fill="#ec4899" stroke="white" stroke-width="1.5"/><circle cx="58" cy="72" r="3" fill="#be185d"/>
+  </svg>
+  <svg class="dk" style="bottom:0;right:0;width:90px;opacity:0.35" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+    <line x1="90" y1="0" x2="0" y2="90" stroke="#3b82f6" stroke-width="0.8"/>
+    <line x1="90" y1="0" x2="40" y2="90" stroke="#3b82f6" stroke-width="0.8"/>
+    <line x1="90" y1="0" x2="90" y2="50" stroke="#3b82f6" stroke-width="0.8"/>
+    <line x1="90" y1="0" x2="90" y2="90" stroke="#3b82f6" stroke-width="0.8"/>
+    <path d="M90 22 Q68 22 62 44" fill="none" stroke="#3b82f6" stroke-width="0.8"/>
+    <path d="M90 44 Q60 44 50 70" fill="none" stroke="#3b82f6" stroke-width="0.8"/>
+    <path d="M90 66 Q74 66 65 85" fill="none" stroke="#3b82f6" stroke-width="0.8"/>
+    <path d="M68 0 Q68 30 48 50" fill="none" stroke="#3b82f6" stroke-width="0.8"/>
+    <path d="M46 0 Q46 32 30 60" fill="none" stroke="#3b82f6" stroke-width="0.8"/>
+  </svg>
+  <div class="dk" style="top:7%;left:42%;font-size:28px;animation:f1 4s ease-in-out infinite">🌸</div>
+  <div class="dk" style="bottom:6%;left:35%;font-size:24px;animation:f2 5s ease-in-out infinite">🌺</div>
+  <div class="dk" style="top:55%;right:16%;font-size:22px;animation:f1 5.5s ease-in-out infinite 1s">🌷</div>
+  <div class="dk" style="top:5%;left:22%;font-size:20px;animation:tw 2s ease-in-out infinite">✨</div>
+  <div class="dk" style="bottom:20%;left:22%;font-size:22px;animation:tw 2.5s ease-in-out infinite 0.5s">⭐</div>
+  <div class="dk" style="top:45%;right:28%;font-size:18px;animation:pu 3s ease-in-out infinite">🎀</div>
+  <div class="dk" style="bottom:42%;left:44%;font-size:16px;animation:tw 1.8s ease-in-out infinite 1s">🌙</div>
+  <div class="dk" style="top:70%;right:30%;font-size:20px;animation:f2 6s ease-in-out infinite 2s">🎵</div>
+  <div class="dk" style="top:30%;left:8%;font-size:18px;animation:tw 3s ease-in-out infinite">🩷</div>
+  <div class="lb">
+    <div class="li">🌸</div>
+    <h1>Bienvenida</h1>
+    <p>Ingresa la contraseña para entrar</p>
+    <input class="pi" type="password" id="pw" placeholder="· · · · · · · · · ·"/>
+    <button class="eb" onclick="checkPW()">Entrar ✨</button>
+    <div class="em" id="err"></div>
+    <p class="hi">Solo tú sabes la clave 🌙</p>
+  </div>
+</div>
+
+<div id="sh" class="sc">
+  <div class="hh">
+    <h2>🌸 Para ti</h2>
+    <button class="xb" onclick="show('sl')">← Salir</button>
+  </div>
+  <div class="hrow">
+    <div class="sb" onclick="show('sp')">
+      <span class="si">🌙</span>
+      <span class="sn">Poema</span>
+      <span class="ss dn">Leer</span>
+    </div>
+    <div class="sb" onclick="show('sfo')">
+      <span class="si">📸</span>
+      <span class="sn">Fotos</span>
+      <span class="ss so">Pronto</span>
+    </div>
+    <div class="sb" onclick="show('sca')">
+      <span class="si">💌</span>
+      <span class="sn">Cartas</span>
+      <span class="ss so">Pronto</span>
+    </div>
+    <div class="sb" onclick="show('smu')">
+      <span class="si">🎵</span>
+      <span class="sn">Música</span>
+      <span class="ss so">Pronto</span>
+    </div>
+    <div class="sb" onclick="show('smo')">
+      <span class="si">✨</span>
+      <span class="sn">Momentos</span>
+      <span class="ss so">Pronto</span>
+    </div>
+  </div>
+</div>
+
+<div id="sp" class="sc">
+  <div style="background:#07091a;width:100%;min-height:700px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:4rem 2rem">
+    <button class="bbk" onclick="show('sh')">← Volver</button>
+    <div class="pstar" style="top:5%;left:8%;width:2px;height:2px;animation:tw 2s ease-in-out infinite"></div>
+    <div class="pstar" style="top:10%;left:25%;width:1.5px;height:1.5px;animation:tw 2.8s ease-in-out infinite 0.5s"></div>
+    <div class="pstar" style="top:4%;left:55%;width:2px;height:2px;animation:tw 1.8s ease-in-out infinite 1s"></div>
+    <div class="pstar" style="top:8%;right:12%;width:1.5px;height:1.5px;animation:tw 2.2s ease-in-out infinite 0.3s"></div>
+    <div class="pstar" style="top:15%;right:28%;width:2px;height:2px;animation:tw 3s ease-in-out infinite 1.5s"></div>
+    <div class="pstar" style="top:20%;left:6%;width:1px;height:1px;animation:tw 2.5s ease-in-out infinite 0.8s"></div>
+    <div class="pstar" style="top:3%;left:78%;width:1.5px;height:1.5px;animation:tw 2s ease-in-out infinite 2s"></div>
+    <div class="pstar" style="top:12%;left:42%;width:1px;height:1px;animation:tw 1.5s ease-in-out infinite 0.2s"></div>
+    <div class="pstar" style="top:18%;right:5%;width:2px;height:2px;animation:tw 3.2s ease-in-out infinite 0.7s"></div>
+    <svg class="pmoon" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="50" fill="#f5e099" opacity="0.1"/>
+      <circle cx="60" cy="60" r="44" fill="#f5e099" opacity="0.15"/>
+      <circle cx="60" cy="60" r="38" fill="#f0d060"/>
+      <ellipse cx="44" cy="50" rx="7" ry="6" fill="#d4a800" opacity="0.5"/>
+      <ellipse cx="68" cy="66" rx="5" ry="4.5" fill="#d4a800" opacity="0.45"/>
+      <ellipse cx="52" cy="74" rx="4" ry="3.5" fill="#d4a800" opacity="0.4"/>
+      <ellipse cx="74" cy="50" rx="3.5" ry="3" fill="#d4a800" opacity="0.35"/>
+      <line x1="60" y1="12" x2="60" y2="4" stroke="#f5e6a3" stroke-width="1" opacity="0.5"/>
+      <line x1="84" y1="20" x2="90" y2="14" stroke="#f5e6a3" stroke-width="1" opacity="0.4"/>
+      <line x1="100" y1="42" x2="108" y2="38" stroke="#f5e6a3" stroke-width="1" opacity="0.35"/>
+      <line x1="36" y1="20" x2="30" y2="14" stroke="#f5e6a3" stroke-width="1" opacity="0.4"/>
+      <line x1="20" y1="42" x2="12" y2="38" stroke="#f5e6a3" stroke-width="1" opacity="0.35"/>
+    </svg>
+    <div class="ptit">Tu Luz en Mi Oscuridad</div>
+    <div class="psub">Poema</div>
+    <div class="pdiv"></div>
+    <div class="ppar">La Luna, tan bella como tú, que refleja la luz en medio del vacío,<br>ha iluminado mi camino para no perderme en medio de la oscuridad.</div>
+    <div class="ppar">Le doy las gracias, gracias, Luna, por la luz que me ayuda a seguir en el camino.<br>Gracias por darme a conocer cuál es el correcto para no tropezar.<br>Gracias por hacerme dar cuenta de dónde soy,<br>gracias por hacerme dar cuenta de dónde vengo y hacia dónde voy.<br>Gracias, Luna, por hacerme saber hacia dónde tengo que ir.</div>
+    <div class="ppar">Al mirarte me doy cuenta que no hay más dónde mirar.<br>La luz que irradias es la más brillante.<br>Tu luz brilla por encima de todas las estrellas;<br>ninguna se compara a la luz que me das.</div>
+    <div class="ppar">Gracias a ti sigo aquí, en medio de la oscuridad,<br>siguiendo mi camino con luz para no tropezar.<br>Gracias a ti sé a dónde mirar.<br>Gracias a ti sigo aquí, en la oscuridad,<br>esperando con ansias el día en que te pueda visitar<br>para estar en tu luz, para nunca más tropezar.</div>
+    <div class="pclos">Oh Luna, algún día te podré tocar.</div>
+    <div class="pfot"><div class="pfotl"></div><span style="color:#a89060;font-size:1.2rem">🌙</span><div class="pfotl"></div></div>
+  </div>
+</div>
+
+<div id="sfo" class="sc bsc">
+  <div class="bsc-in">
+    <div style="font-size:40px;margin-bottom:0.8rem">📸</div>
+    <h2>Fotos y recuerdos</h2>
+    <p>Aquí irán los momentos más bonitos juntos</p>
+    <div class="bsc-box"><p>Pronto habrá fotos y recuerdos especiales aquí 🌷</p></div>
+    <button class="bk" onclick="show('sh')">← Volver</button>
+  </div>
+</div>
+<div id="sca" class="sc bsc">
+  <div class="bsc-in">
+    <div style="font-size:40px;margin-bottom:0.8rem">💌</div>
+    <h2>Cartas y mensajes</h2>
+    <p>Palabras del corazón que guardar para siempre</p>
+    <div class="bsc-box"><p>Próximamente habrá cartas y mensajes especiales 💕</p></div>
+    <button class="bk" onclick="show('sh')">← Volver</button>
+  </div>
+</div>
+<div id="smu" class="sc bsc">
+  <div class="bsc-in">
+    <div style="font-size:40px;margin-bottom:0.8rem">🎵</div>
+    <h2>Nuestra música</h2>
+    <p>Las canciones que suenan en nuestro mundo</p>
+    <div class="bsc-box"><p>Próximamente las canciones favoritas 🎶</p></div>
+    <button class="bk" onclick="show('sh')">← Volver</button>
+  </div>
+</div>
+<div id="smo" class="sc bsc">
+  <div class="bsc-in">
+    <div style="font-size:40px;margin-bottom:0.8rem">✨</div>
+    <h2>Momentos especiales</h2>
+    <p>Todo lo que hace especial cada día</p>
+    <div class="bsc-box"><p>Próximamente los mejores momentos 🌟</p></div>
+    <button class="bk" onclick="show('sh')">← Volver</button>
+  </div>
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  window.scrollTo&&window.scrollTo(0,0);
+}
+function checkPW(){
+  const val=document.getElementById('pw').value.trim();
+  const err=document.getElementById('err');
+  if(val==='1506-1501'){
+    show('sh');
+    err.textContent='';
+  } else {
+    err.textContent='Contraseña incorrecta 🌸 inténtalo de nuevo';
+    err.style.animation='none';
+    void err.offsetWidth;
+    err.style.animation='sh 0.3s ease';
+    document.getElementById('pw').value='';
+    document.getElementById('pw').focus();
+  }
+}
+document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')checkPW()});
+</script>
+</body>
+</html>

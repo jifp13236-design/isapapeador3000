@@ -1,0 +1,65 @@
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+.sc{display:none;width:100%;min-height:700px;flex-direction:column;align-items:center}
+.sc.on{display:flex}
+@keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes f2{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-10px) rotate(5deg)}}
+@keyframes sw{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+@keyframes pu{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@keyframes tw{0%,100%{opacity:0.25}50%{opacity:1}}
+@keyframes wd{0%,100%{transform:translateY(0)}50%{transform:translateY(13px)}}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sh{0%,100%{transform:translateX(0)}30%{transform:translateX(-5px)}70%{transform:translateX(5px)}}
+@keyframes dr{0%{transform:translate(0,0)}25%{transform:translate(8px,-6px)}50%{transform:translate(0,-11px)}75%{transform:translate(-8px,-6px)}100%{transform:translate(0,0)}}
+#sl{background:#fde8f0;position:relative;overflow:hidden;justify-content:center;padding:3rem 1.5rem}
+.dk{position:absolute;pointer-events:none}
+.dk.blob1{position:absolute;top:-50px;left:-50px;width:200px;height:200px;border-radius:50%;background:#fda4af;opacity:0.32;animation:dr 8s ease-in-out infinite}
+.dk.blob2{position:absolute;top:-30px;right:-40px;width:180px;height:180px;border-radius:50%;background:#f9a8d4;opacity:0.28;animation:dr 10s ease-in-out infinite reverse}
+.dk.blob3{position:absolute;bottom:-60px;left:-30px;width:220px;height:220px;border-radius:50%;background:#ec4899;opacity:0.25;animation:dr 12s ease-in-out infinite}
+.dk.blob4{position:absolute;bottom:-40px;right:-50px;width:190px;height:190px;border-radius:50%;background:#db2777;opacity:0.29;animation:dr 9s ease-in-out infinite reverse}
+.lb{position:relative;z-index:10;background:rgba(255,255,255,0.88);border-radius:26px;border:2.5px solid #f9a8d4;padding:2.5rem 2rem 2rem;max-width:330px;width:100%;text-align:center;animation:fu 0.7s ease both}
+.li{font-size:42px;animation:pu 2.5s ease-in-out infinite;margin-bottom:0.3rem}
+.lb h1{font-size:1.5rem;color:#be185d;font-family:Georgia,serif;margin-bottom:0.2rem}
+.lb>p{font-size:0.84rem;color:#9d174d;margin-bottom:1.4rem;font-family:sans-serif}
+.pi{width:100%;padding:11px 14px;border-radius:50px;border:2px solid #f9a8d4;background:#fff0f6;font-size:1rem;text-align:center;color:#831843;outline:none;margin-bottom:0.8rem;font-family:sans-serif;letter-spacing:0.18em;transition:border-color 0.2s}
+.pi:focus{border-color:#ec4899}
+.eb{width:100%;padding:11px;border-radius:50px;background:#ec4899;color:#fff;border:none;cursor:pointer;font-size:0.95rem;font-family:sans-serif;font-weight:500;transition:background 0.2s,transform 0.1s}
+.eb:hover{background:#be185d}.eb:active{transform:scale(0.97)}
+.em{font-size:0.82rem;color:#be185d;margin-top:0.5rem;font-family:sans-serif;min-height:1em}
+.hi{font-size:0.75rem;color:#db2777;margin-top:0.7rem;font-family:sans-serif;opacity:0.6}
+#sh{background:#fff5fb;flex-direction:column;align-items:stretch}
+.hh{background:#ec4899;padding:0.8rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.hh h2{color:#fff;font-family:Georgia,serif;font-size:1.2rem}
+.xb{background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);color:#fff;padding:5px 14px;border-radius:50px;cursor:pointer;font-size:0.8rem;font-family:sans-serif}
+.xb:hover{background:rgba(255,255,255,0.3)}
+.hrow{display:flex;gap:0.9rem;padding:0.5rem 1.5rem;overflow-x:auto;width:100%;scrollbar-width:none}
+.hrow::-webkit-scrollbar{display:none}
+.sb{background:#fff;border-radius:18px;border:2px solid #fce7f3;padding:1.2rem 0.9rem;text-align:center;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:0.45rem;min-width:105px;transition:transform 0.15s,box-shadow 0.15s,border-color 0.15s;flex-shrink:0}
+.sb:hover{transform:translateY(-4px);box-shadow:0 6px 18px rgba(236,72,153,0.15);border-color:#f9a8d4}
+.sb:active{transform:scale(0.96)}
+.si{font-size:28px}
+.sn{font-size:0.82rem;color:#831843;font-family:Georgia,serif;font-weight:500}
+.ss{font-size:0.68rem;padding:2px 8px;border-radius:50px;font-family:sans-serif}
+.ss.dn{background:#fce7f3;color:#be185d}.ss.so{background:#f1f5f9;color:#94a3b8}
+#sp{background:#07091a;align-items:center;padding:4rem 2rem;position:relative;overflow:hidden;min-height:700px}
+.pstar{position:absolute;border-radius:50%;background:#fff}
+.bbk{position:absolute;top:1rem;left:1rem;z-index:20;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.22);color:#f5e6a3;padding:6px 14px;border-radius:50px;cursor:pointer;font-size:0.8rem;font-family:sans-serif}
+.bbk:hover{background:rgba(255,255,255,0.14)}
+.pmoon{margin-bottom:1.2rem;margin-top:0.5rem;animation:pu 4s ease-in-out infinite}
+.ptit{font-family:Georgia,serif;font-style:italic;color:#f5e6a3;font-size:1.55rem;text-align:center;margin-bottom:0.25rem}
+.psub{font-family:sans-serif;color:#a89060;font-size:0.78rem;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:1.2rem}
+.pdiv{width:90px;height:1px;background:#a89060;opacity:0.45;margin:0 auto 1.8rem}
+.ppar{font-family:Georgia,serif;color:#ddd5b8;font-size:0.9rem;line-height:1.95;text-align:center;margin-bottom:1.4rem;max-width:480px;width:100%}
+.ppar:first-of-type{color:#f0e8c8}
+.pclos{font-family:Georgia,serif;color:#f5e6a3;font-style:italic;font-size:1.08rem;text-align:center;margin-top:0.3rem}
+.pfot{display:flex;align-items:center;gap:1rem;margin-top:2.5rem}
+.pfotl{width:50px;height:1px;background:#a89060;opacity:0.4}
+.bsc{background:#fff5fb;align-items:center;justify-content:center;flex-direction:column;padding:3rem 2rem}
+.bsc-in{text-align:center}
+.bsc-in h2{font-family:Georgia,serif;color:#be185d;font-size:1.35rem;margin-bottom:0.4rem}
+.bsc-in>p{font-family:sans-serif;color:#9d174d;font-size:0.85rem;margin-bottom:1.8rem}
+.bsc-box{border:2px dashed #fce7f3;border-radius:20px;padding:2rem 1.5rem;background:#fff;max-width:280px}
+.bsc-box p{font-family:sans-serif;color:#cbd5e1;font-size:0.88rem}
+.bk{background:#ec4899;color:#fff;border:none;padding:10px 24px;border-radius:50px;cursor:pointer;font-family:sans-serif;font-size:0.88rem;margin-top:1.5rem;display:inline-block}
+.bk:hover{background:#be185d}
+</style>
