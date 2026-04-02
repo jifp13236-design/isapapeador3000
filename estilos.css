@@ -62,4 +62,16 @@
 .bsc-box p{font-family:sans-serif;color:#cbd5e1;font-size:0.88rem}
 .bk{background:#ec4899;color:#fff;border:none;padding:10px 24px;border-radius:50px;cursor:pointer;font-family:sans-serif;font-size:0.88rem;margin-top:1.5rem;display:inline-block}
 .bk:hover{background:#be185d}
+/* === RESPONSIVE PARA CELULAR === */
+@media (max-width: 500px){
+  #sl{padding:2rem 1rem}
+  .lb{max-width:92%;padding:2rem 1.5rem}
+  .li{font-size:38px}
+  .hrow{gap:0.7rem;padding:0.8rem 1rem}
+  .sb{min-width:92px;padding:1rem 0.7rem}
+  .si{font-size:26px}
+  .ptit{font-size:1.35rem}
+  .ppar{font-size:0.88rem;line-height:1.85}
+  .pclos{font-size:1rem}
+}
 </style>
